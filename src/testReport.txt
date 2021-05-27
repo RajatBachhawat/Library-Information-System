@@ -1,0 +1,315 @@
+TEST COMPLIANCE REPORT - LIBRARY INFORMATION SYSTEM
+
+
+
+---- Test LibraryMember----
+
+Getter Function Name Test for Library Members: PASS
+
+
+Getter Function MemberID Test for Library Members: PASS
+
+
+Getter Function Number of Books Test for Library Members: PASS
+
+
+Check availability when member has active reservation in ISBN : PASS
+
+
+Check availability when member has pending reservation in ISBN : PASS
+
+
+Check availability when member has no reservation in ISBN but copies are available: PASS
+
+
+Check availability when member has no reservation in ISBN and no copies are available: PASS
+
+
+Check availability when member has a reservation in different ISBN and no copies are available: PASS
+
+
+Error when member tries to issue book they have already issued: PASS
+
+
+Error when member tries to issue book after exceeding limit: PASS
+
+
+Member Claims a reserved book: PASS
+
+
+Member Claims an available book: PASS
+
+
+Error when Member tries to reserve an available book: PASS
+
+
+Member reserves an unavilable book: PASS
+
+
+Error when Member reserves an unavilable book when they already have a reservation for some other book: PASS
+
+
+Error when Member reserves an unavilable book when they already have an active reservation for this book: PASS
+
+
+Error when Member reserves an unavilable book when they already have a pending reservation for this book: PASS
+
+
+Correct message and reminder sent when librarian sends a reminder and member has overdue books: PASS
+
+
+Reminder made to 0 when librarian sends reminder  but member has no overdue books: PASS
+
+
+Reminder made to 0 when librarian does not send reminder: PASS
+
+
+Update database when member has expired active reservation: PASS
+
+
+Update database when member has pending reservation which becomes active reservation: PASS
+
+
+Update database when member has no reservation: PASS
+
+
+
+---- Test UnderGraduateStudent----
+
+create object when new member is added: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+throw error when invalid member is trying to log in: PASS
+
+
+throw error when incorrect password is entered: PASS
+
+
+Issue when member has not yet exhausted his limit: PASS
+
+
+Error when member issues after having exhausted his limit: PASS
+
+
+
+---- Test PostGraduateStudent----
+
+create object when new member is added: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+throw error when invalid member is trying to log in: PASS
+
+
+throw error when incorrect password is entered: PASS
+
+
+Issue when member has not yet exhausted his limit: PASS
+
+
+Error when member issues after having exhausted his limit: PASS
+
+
+
+---- Test ResearchScholar----
+
+create object when new member is added: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+throw error when invalid member is trying to log in: PASS
+
+
+throw error when incorrect password is entered: PASS
+
+
+Issue when member has not yet exhausted his limit: PASS
+
+
+Error when member issues after having exhausted his limit: PASS
+
+
+
+---- Test FacultyMember----
+
+create object when new member is added: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+create object when existing member is logged in: PASS
+
+
+throw error when invalid member is trying to log in: PASS
+
+
+throw error when incorrect password is entered: PASS
+
+
+Issue when member has not yet exhausted his limit: PASS
+
+
+Error when member issues after having exhausted his limit: PASS
+
+
+
+---- Test LibraryClerk----
+
+Correct Employee Object Constructed when valid login: PASS
+
+
+create object when employee is logged in: PASS
+
+
+throw error when invalid employee is trying to log in: PASS
+
+
+throw error when incorrect password is entered: PASS
+
+
+Reservations Correctly updated when same ISBN already present with pending reservations, Book added to database: PASS
+
+
+Reservations Correctly updated when same ISBN already present with no pending reservations, Book added to database: PASS
+
+
+Reservations Correctly updated when same ISBN not already present : PASS
+
+
+Correctly Deleted ALL Disposed Books from Databases: PASS
+
+
+Error thrown when member tries to return a book they have not issued: PASS
+
+
+Error thrown when member tries to return a book not in the library: PASS
+
+
+Correct Updates when returned book has pending reservations: PASS
+
+
+Correct Updates when returned book has no pending reservations: PASS
+
+
+No penalty collected when returned on time: PASS
+
+
+Penalty collected when not returned on time: PASS
+
+
+
+---- Test Librarian----
+
+Correctly did construction of Librarian object with correct ID: PASS
+
+
+Correctly blocked construction of Librarian object with incorrect ID: PASS
+
+
+Correctly Added when Member Does not exist already: PASS
+
+
+Error when Librarian tries to add a member who already exists: PASS
+
+
+Error when required argument name missing : PASS
+
+
+Error when required argument member ID missing : PASS
+
+
+Deleting Existing member : PASS
+
+
+Error when Deleting non-Existing member : PASS
+
+
+Error when Deleting member with dues : PASS
+
+
+Send reminders to all members: PASS
+
+
+Showing valid Output when some books have not been issued in the last 5 years: PASS
+
+
+Showing valid Output when all books have been issued in the last 5 years: PASS
+
+
+Error when disposing a book whose UID does not exist: PASS
+
+
+Error when disposing a book which has been issued in the last 5 years: PASS
+
+
+disposing a book which has not been issued in the last 5 years: PASS
+
+
+
+---- Test BookHandler----
+
+Correct Data Members when only ISBN provided: PASS
+
+
+Correct Data Members ISBN and UID provided: PASS
+
+
+Singleton Class Check: PASS
+
+
+Update Carried out correctly when pending reservation are there, some active reservations expired: PASS
+
+
+Update Carried out correctly when pending reservation are there, no reservations expired: PASS
+
+
+Update Carried out correctly when no pending reservation are there, some active reservations expired: PASS
+
+
+Update Carried out correctly when no pending reservation are there, no active reservations expired: PASS
+
+
+Book succesfully issued from Ready-To-CLaim reserved Books section : PASS
+
+
+Book succesfully issued from Available Books section : PASS
+
+
+Book succesfully returned when there is a pending reservation for it : PASS
+
+
+Book succesfully returned when there is no pending reservation for it : PASS
+
+
+Book succesfully reserved : PASS
+
+
+
+---- Test Book----
+
+Book is created properly : PASS
+
+
+
+---- Test ActiveReservation----
+
+ActiveReservation is created properly : PASS
+
+
